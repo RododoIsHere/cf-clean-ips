@@ -3,8 +3,8 @@ name: "Collect IPs"
 on:
   push:
     branches: [ "main" ]
-  #schedule:
-  #  - cron: '0 0 * * 6'
+  schedule:
+   - cron: '*/1 * * * *'
 
 jobs:
   build:
@@ -15,8 +15,7 @@ jobs:
         run: |
           python -m pip install dnspython
           python collect.py
-          git config --global user.email "vahidfarid@gmail.com"
-          git config --global user.name "Vahid Farid"
+          git config --global user.name "RododoIsHere"
           git add -A
           git commit -m "Automatic update"
           git push
