@@ -27,5 +27,5 @@ jobs:
           git config --global user.email "RododoIsHereAction@proton.me"
           git config --global user.name "RododoIsHere"
           git add -A
-          git commit -m "Automatic update" || echo "No changes to commit"
+          git commit -m "Automatic IP sync $(TZ='Asia/Tehran' date +'%Y-%m-%d %H:%M')" || echo "No changes to commit"
           git push
