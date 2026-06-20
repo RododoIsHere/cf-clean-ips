@@ -5,7 +5,6 @@ from datetime import datetime
 
 def main():
     merged_ipv4 = []
-    seen_ips = set()
     last_update_ts = 0
 
     list_files = glob.glob('*_list.json')
@@ -13,14 +12,11 @@ def main():
     def add_ips(ip_list):
         nonlocal last_update_ts
         for item in ip_list:
-            ip = item.get("ip")
-            if ip and ip not in seen_ips:
-                seen_ips.add(ip)
-                merged_ipv4.append(item)
-                
-                created_at = item.get("created_at", 0)
-                if created_at > last_update_ts:
-                    last_update_ts = created_at
+            merged_ipv4.append(item)
+            
+            created_at = item.get("created_at", 0)
+            if created_at > last_update_ts:
+                last_update_ts = created_at
 
     for filename in list_files:
         data = load_json(filename)
