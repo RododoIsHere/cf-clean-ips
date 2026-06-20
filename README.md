@@ -23,6 +23,7 @@
 - [myips.us.eu.org](myips.us.eu.org)
 - [filna.cloud](filna.cloud)
 - [ipcf.cloud](ipcf.cloud)
+- [hostmonit.com](hostmonit.com)
 
 ### این پروژه نیاز به همکاری شما دارد 
 اگر شما هم دامین آی‌پی تمیز قابل استفاده، به تفکیک  اپراتورها دارید، میتوانید با ارسال دامین خود در بخش Issue ها در این پروژه مشارکت نمایید. 
