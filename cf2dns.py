@@ -4,7 +4,29 @@ import requests
 from datetime import datetime
 
 def main():
-    result = collect()
+    result, has_error = collect()
+
+    if has_error:
+        print("Warning: An error occurred during data collection. Aborting save to protect existing data.")
+        return
+
+    if not result.get("ipv4"):
+        print("Warning: No IPs collected (network error or empty response). Aborting save to protect existing data.")
+        return
+
+    try:
+        with open('cf2dns_list.json', 'r') as f:
+            old_data = json.load(f)
+            old_ipv4 = old_data.get("ipv4", [])
+    except (FileNotFoundError, json.JSONDecodeError):
+        old_ipv4 = []
+
+    old_data_set = {el["ip"] for el in old_ipv4}
+    new_data_set = {el["ip"] for el in result["ipv4"]}
+
+    if old_data_set == new_data_set:
+        print("No new IPs found. Skipping save to keep history clean.")
+        return
 
     with open('cf2dns_list.json', 'w') as json_file:
         json_file.write(json.dumps(result, indent=4))
@@ -13,6 +35,8 @@ def main():
         text_file.write(f"Last Update: {result['last_update']}\n\nIPv4:\n")
         for el in result["ipv4"]:
             text_file.write(f" - {el['ip']:15s}  {el['operator']:5s}  {el['provider']}  {el['created_at']}\n")
+            
+    print("Successfully fetched and saved new data.")
 
 def collect():
     result = {
@@ -20,11 +44,13 @@ def collect():
         "last_timestamp": 0,
         "ipv4": []
     }
+    
+    has_error = False
 
     try:
         with open('cf2dns_list.json', 'r') as f:
             existing_ips = json.load(f)
-    except FileNotFoundError:
+    except (FileNotFoundError, json.JSONDecodeError):
         existing_ips = {"ipv4": []}
 
     last_update = 0
@@ -38,6 +64,7 @@ def collect():
     
     try:
         response = requests.post("https://api.hostmonit.com/get_optimization_ip", headers=headers, json=data, timeout=10)
+        
         if response.status_code == 200:
             resp_json = response.json()
             
@@ -58,19 +85,28 @@ def collect():
                             "provider": "hostmonit.com",
                             "created_at": created_at
                         })
+            else:
+                print(f"API Error: Returned non-200 success code inside JSON: {resp_json.get('code')}")
+                has_error = True
+        else:
+            print(f"HTTP Error: Received status code {response.status_code}")
+            has_error = True
+            
     except Exception as e:
         print(f"Error fetching IPv4: {e}")
+        has_error = True
 
-    if last_update == 0:
-        last_update = int(time.time())
+    if not has_error and result["ipv4"]:
+        if last_update == 0:
+            last_update = int(time.time())
 
-    result["last_update"] = datetime.fromtimestamp(last_update).__str__()
-    result["last_timestamp"] = last_update
+        result["last_update"] = datetime.fromtimestamp(last_update).__str__()
+        result["last_timestamp"] = last_update
 
-    result["ipv4"].sort(key=lambda el: el["created_at"], reverse=True)
-    result["ipv4"].sort(key=lambda el: el["operator"])
+        result["ipv4"].sort(key=lambda el: el["created_at"], reverse=True)
+        result["ipv4"].sort(key=lambda el: el["operator"])
 
-    return result
+    return result, has_error
 
 if __name__ == '__main__':
     main()
