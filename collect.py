@@ -3,18 +3,18 @@ import json
 import dns
 import dns.resolver
 from datetime import datetime
+import os
 
 def main():
     result = collect()
 
-    with open('list.json', 'w') as json_file:
+    with open('collect_list.json', 'w') as json_file:
         json_file.write(json.dumps(result, indent=4))
 
-    with open('list.txt', 'w') as text_file:
+    with open('collect_list.txt', 'w') as text_file:
         text_file.write(f"Last Update: {result['last_update']}\n\nIPv4:\n")
         for el in result["ipv4"]:
             text_file.write(f"  - {el['ip']:15s}    {el['operator']:5s}    {el['provider']}    {el['created_at']}\n")
-
 
 def collect():
     result = {
@@ -25,7 +25,12 @@ def collect():
     }
 
     providers = json.load(open('providers.json'))
-    existing_ips = json.load(open('list.json'))
+    
+    try:
+        existing_ips = json.load(open('collect_list.json'))
+    except FileNotFoundError:
+        existing_ips = {"ipv4": []}
+        
     last_update = 0
 
     resolver = dns.resolver.Resolver()
@@ -33,12 +38,11 @@ def collect():
     resolver.lifetime = 2
 
     for provider in providers:
-        # IPv4
         try:
             ipv4_result = resolver.resolve(provider, "A")
             for ipv4 in ipv4_result:
                 ip = ipv4.to_text()
-                prev = next((el for el in existing_ips["ipv4"] if el["ip"] == ip), None)
+                prev = next((el for el in existing_ips.get("ipv4", []) if el["ip"] == ip), None)
                 created_at = prev["created_at"] if prev else int(time.time())
                 last_update = created_at if created_at > last_update else last_update
                 result["ipv4"].append({
@@ -49,6 +53,9 @@ def collect():
                 })
         except:
             pass
+            
+    if last_update == 0:
+        last_update = int(time.time())
 
     result["last_update"] = datetime.fromtimestamp(last_update).__str__()
     result["last_timestamp"] = last_update
