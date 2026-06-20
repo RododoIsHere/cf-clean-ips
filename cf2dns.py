@@ -62,39 +62,58 @@ def collect():
 
     data = {"key": "o1zrmHAF", "type": "v4"}
     
-    try:
-        response = requests.post("https://api.hostmonit.com/get_optimization_ip", headers=headers, json=data, timeout=10)
-        
-        if response.status_code == 200:
-            resp_json = response.json()
+    max_retries = 3
+    timeout_seconds = 30
+    
+    for attempt in range(max_retries):
+        try:
+            response = requests.post("https://api.hostmonit.com/get_optimization_ip", headers=headers, json=data, timeout=timeout_seconds)
             
-            if resp_json.get("code") == 200:
-                info = resp_json.get("info", {})
+            if response.status_code == 200:
+                resp_json = response.json()
                 
-                for operator_key, ip_list in info.items():
-                    for item in ip_list:
-                        ip = item.get("ip")
-                        
-                        prev = next((el for el in existing_ips.get("ipv4", []) if el["ip"] == ip), None)
-                        created_at = prev["created_at"] if prev else int(time.time())
-                        last_update = created_at if created_at > last_update else last_update
-                        
-                        result["ipv4"].append({
-                            "ip": ip,
-                            "operator": "CFY",
-                            "provider": "hostmonit.com",
-                            "created_at": created_at
-                        })
+                if resp_json.get("code") == 200:
+                    info = resp_json.get("info", {})
+                    
+                    for operator_key, ip_list in info.items():
+                        for item in ip_list:
+                            ip = item.get("ip")
+                            
+                            prev = next((el for el in existing_ips.get("ipv4", []) if el["ip"] == ip), None)
+                            created_at = prev["created_at"] if prev else int(time.time())
+                            last_update = created_at if created_at > last_update else last_update
+                            
+                            result["ipv4"].append({
+                                "ip": ip,
+                                "operator": "CFY",
+                                "provider": "hostmonit.com",
+                                "created_at": created_at
+                            })
+                    
+                    has_error = False
+                    break 
+                else:
+                    print(f"API Error: Returned non-200 success code inside JSON: {resp_json.get('code')}")
+                    has_error = True
+                    break 
             else:
-                print(f"API Error: Returned non-200 success code inside JSON: {resp_json.get('code')}")
+                print(f"HTTP Error: Received status code {response.status_code}")
+                if response.status_code >= 500 and attempt < max_retries - 1:
+                    print(f"Server error. Retrying ({attempt + 1}/{max_retries})...")
+                    time.sleep(2)
+                    continue
                 has_error = True
-        else:
-            print(f"HTTP Error: Received status code {response.status_code}")
-            has_error = True
+                break
+                
+        except requests.exceptions.ReadTimeout:
+            print(f"API timeout. Retrying ({attempt + 1}/{max_retries})...")
+            time.sleep(2) 
+            has_error = True 
             
-    except Exception as e:
-        print(f"Error fetching IPv4: {e}")
-        has_error = True
+        except Exception as e:
+            print(f"Error fetching IPv4: {e}")
+            has_error = True
+            break 
 
     if not has_error and result["ipv4"]:
         if last_update == 0:
