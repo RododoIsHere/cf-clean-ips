@@ -1,7 +1,19 @@
 {
-    "last_update": "2026-06-20 10:11:26",
-    "last_timestamp": 1781950286,
+    "last_update": "2026-06-20 12:54:12",
+    "last_timestamp": 1781960052,
     "ipv4": [
+        {
+            "ip": "104.17.87.123",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1781960052
+        },
+        {
+            "ip": "104.18.184.249",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1781960052
+        },
         {
             "ip": "198.41.223.175",
             "operator": "CFY",
@@ -15,31 +27,19 @@
             "created_at": 1781937414
         },
         {
-            "ip": "104.19.82.29",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1781937414
-        },
-        {
             "ip": "104.17.70.190",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1781937414
         },
         {
-            "ip": "104.17.59.41",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1781937414
-        },
-        {
-            "ip": "198.41.209.17",
+            "ip": "198.41.208.120",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1781919072
         },
         {
-            "ip": "198.41.208.120",
+            "ip": "198.41.209.17",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1781919072
@@ -51,13 +51,13 @@
             "created_at": 1781919072
         },
         {
-            "ip": "198.41.209.17",
+            "ip": "198.41.208.120",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1781919072
         },
         {
-            "ip": "198.41.208.120",
+            "ip": "198.41.209.17",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1781919072
