@@ -1,21 +1,21 @@
 {
-    "last_update": "2026-06-26 15:27:34",
-    "last_timestamp": 1782487654,
+    "last_update": "2026-06-26 17:56:40",
+    "last_timestamp": 1782496600,
     "ipv4": [
         {
+            "ip": "104.21.229.205",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1782496600
+        },
+        {
+            "ip": "198.41.211.50",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1782496600
+        },
+        {
             "ip": "104.16.235.248",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1782487654
-        },
-        {
-            "ip": "162.159.36.169",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1782487654
-        },
-        {
-            "ip": "162.159.36.49",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1782487654
@@ -57,13 +57,13 @@
             "created_at": 1782407922
         },
         {
-            "ip": "198.41.209.50",
+            "ip": "198.41.208.174",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1782407922
         },
         {
-            "ip": "198.41.208.174",
+            "ip": "198.41.209.50",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1782407922
@@ -81,13 +81,13 @@
             "created_at": 1782407922
         },
         {
-            "ip": "198.41.209.50",
+            "ip": "198.41.208.174",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1782407922
         },
         {
-            "ip": "198.41.208.174",
+            "ip": "198.41.209.50",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1782407922
