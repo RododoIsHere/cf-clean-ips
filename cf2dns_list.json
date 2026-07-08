@@ -1,48 +1,36 @@
 {
-    "last_update": "2026-07-08 00:04:00",
-    "last_timestamp": 1783469040,
+    "last_update": "2026-07-08 07:34:00",
+    "last_timestamp": 1783496040,
     "ipv4": [
         {
-            "ip": "104.17.55.55",
+            "ip": "104.17.27.69",
             "operator": "CFY",
             "provider": "hostmonit.com",
-            "created_at": 1783469040
+            "created_at": 1783496040
         },
         {
-            "ip": "104.17.121.107",
+            "ip": "104.19.147.37",
             "operator": "CFY",
             "provider": "hostmonit.com",
-            "created_at": 1783469040
+            "created_at": 1783496040
         },
         {
-            "ip": "104.18.69.196",
+            "ip": "104.17.55.136",
             "operator": "CFY",
             "provider": "hostmonit.com",
-            "created_at": 1783462570
+            "created_at": 1783496040
         },
         {
-            "ip": "198.41.222.222",
+            "ip": "104.18.250.73",
             "operator": "CFY",
             "provider": "hostmonit.com",
-            "created_at": 1783462570
+            "created_at": 1783496040
         },
         {
-            "ip": "104.16.23.177",
+            "ip": "162.159.36.212",
             "operator": "CFY",
             "provider": "hostmonit.com",
-            "created_at": 1783457525
-        },
-        {
-            "ip": "198.41.209.50",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1783436864
-        },
-        {
-            "ip": "198.41.209.63",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1783436864
+            "created_at": 1783496040
         },
         {
             "ip": "198.41.209.50",
@@ -51,7 +39,7 @@
             "created_at": 1783436864
         },
         {
-            "ip": "198.41.209.63",
+            "ip": "198.41.209.50",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1783436864
