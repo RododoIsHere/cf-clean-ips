@@ -1,36 +1,60 @@
 {
-    "last_update": "2026-07-20 04:39:57",
-    "last_timestamp": 1784522397,
+    "last_update": "2026-07-20 08:10:52",
+    "last_timestamp": 1784535052,
     "ipv4": [
         {
-            "ip": "198.41.222.92",
+            "ip": "198.41.208.167",
             "operator": "CFY",
             "provider": "hostmonit.com",
-            "created_at": 1784522397
+            "created_at": 1784535052
         },
         {
-            "ip": "104.17.220.90",
+            "ip": "198.41.209.8",
             "operator": "CFY",
             "provider": "hostmonit.com",
-            "created_at": 1784522397
+            "created_at": 1784535052
         },
         {
-            "ip": "104.17.250.112",
+            "ip": "104.17.132.13",
             "operator": "CFY",
             "provider": "hostmonit.com",
-            "created_at": 1784522397
+            "created_at": 1784535052
         },
         {
-            "ip": "162.159.246.255",
+            "ip": "104.17.152.120",
             "operator": "CFY",
             "provider": "hostmonit.com",
-            "created_at": 1784522397
+            "created_at": 1784535052
         },
         {
-            "ip": "104.16.148.193",
+            "ip": "104.18.5.47",
             "operator": "CFY",
             "provider": "hostmonit.com",
-            "created_at": 1784522397
+            "created_at": 1784535052
+        },
+        {
+            "ip": "104.19.69.114",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1784535052
+        },
+        {
+            "ip": "104.19.163.227",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1784535052
+        },
+        {
+            "ip": "198.41.208.167",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1784535052
+        },
+        {
+            "ip": "198.41.209.8",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1784535052
         },
         {
             "ip": "198.41.208.108",
