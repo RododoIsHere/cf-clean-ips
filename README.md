@@ -8,7 +8,6 @@
 - [amiajoketoyou.lol](amiajoketoyou.lol)
 - [eqjgkx.xyz](eqjgkx.xyz)
 - [adihnrr.eu.org](adihnrr.eu.org)
-- [fastynet.cloud](fastynet.cloud)
 - [chamburak520.online](chamburak520.online)
 - [vcdn.online](vcdn.online)
 - [ma7ta.online](ma7ta.online)
