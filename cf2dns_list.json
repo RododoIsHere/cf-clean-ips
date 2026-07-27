@@ -1,39 +1,39 @@
 {
-    "last_update": "2026-07-26 22:04:09",
-    "last_timestamp": 1785103449,
+    "last_update": "2026-07-27 00:05:53",
+    "last_timestamp": 1785110753,
     "ipv4": [
         {
+            "ip": "104.17.150.227",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1785110753
+        },
+        {
+            "ip": "104.17.251.85",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1785110753
+        },
+        {
+            "ip": "104.17.201.169",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1785110753
+        },
+        {
+            "ip": "198.41.211.68",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1785110753
+        },
+        {
+            "ip": "198.41.214.203",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1785110753
+        },
+        {
             "ip": "198.41.209.123",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1785103449
-        },
-        {
-            "ip": "104.16.253.116",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1785103449
-        },
-        {
-            "ip": "104.18.14.62",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1785103449
-        },
-        {
-            "ip": "104.19.97.223",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1785103449
-        },
-        {
-            "ip": "198.41.222.65",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1785103449
-        },
-        {
-            "ip": "104.16.164.26",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1785103449
