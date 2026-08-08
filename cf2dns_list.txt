@@ -1,18 +1,18 @@
-Last Update: 2026-08-08 13:00:39
+Last Update: 2026-08-08 14:37:37
 
 IPv4:
+ - 104.16.154.114   CFY    hostmonit.com  1786199857
+ - 104.17.63.186    CFY    hostmonit.com  1786199857
+ - 104.17.57.121    CFY    hostmonit.com  1786199857
+ - 104.19.32.170    CFY    hostmonit.com  1786199857
+ - 104.19.90.174    CFY    hostmonit.com  1786199857
  - 198.41.209.108   CFY    hostmonit.com  1786194039
  - 141.101.114.20   CFY    hostmonit.com  1786194039
  - 172.67.177.8     CFY    hostmonit.com  1786194039
  - 172.67.82.32     CFY    hostmonit.com  1786194039
- - 104.16.1.162     CFY    hostmonit.com  1786194039
- - 104.16.84.114    CFY    hostmonit.com  1786194039
  - 198.41.209.108   CFY    hostmonit.com  1786194039
  - 141.101.114.20   CFY    hostmonit.com  1786194039
  - 172.67.177.8     CFY    hostmonit.com  1786194039
  - 172.67.82.32     CFY    hostmonit.com  1786194039
  - 198.41.209.87    CFY    hostmonit.com  1786185567
- - 104.19.39.228    CFY    hostmonit.com  1786185567
- - 104.19.52.167    CFY    hostmonit.com  1786185567
- - 104.18.102.236   CFY    hostmonit.com  1786185567
  - 198.41.209.87    CFY    hostmonit.com  1786185567
