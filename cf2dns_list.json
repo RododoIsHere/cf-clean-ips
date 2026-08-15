@@ -1,7 +1,13 @@
 {
-    "last_update": "2026-08-15 12:48:45",
-    "last_timestamp": 1786798125,
+    "last_update": "2026-08-15 13:34:49",
+    "last_timestamp": 1786800889,
     "ipv4": [
+        {
+            "ip": "104.17.154.215",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1786800889
+        },
         {
             "ip": "104.19.97.80",
             "operator": "CFY",
@@ -22,12 +28,6 @@
         },
         {
             "ip": "104.18.111.18",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1786793154
-        },
-        {
-            "ip": "104.17.251.89",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1786793154
