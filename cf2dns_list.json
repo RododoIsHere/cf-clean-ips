@@ -1,7 +1,25 @@
 {
-    "last_update": "2026-08-22 20:29:12",
-    "last_timestamp": 1787430552,
+    "last_update": "2026-08-22 21:27:05",
+    "last_timestamp": 1787434025,
     "ipv4": [
+        {
+            "ip": "172.64.66.226",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1787434025
+        },
+        {
+            "ip": "104.17.61.199",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1787434025
+        },
+        {
+            "ip": "104.19.106.139",
+            "operator": "CFY",
+            "provider": "hostmonit.com",
+            "created_at": 1787434025
+        },
         {
             "ip": "104.19.119.49",
             "operator": "CFY",
@@ -15,16 +33,10 @@
             "created_at": 1787430552
         },
         {
-            "ip": "104.17.70.248",
+            "ip": "162.159.138.248",
             "operator": "CFY",
             "provider": "hostmonit.com",
-            "created_at": 1787426813
-        },
-        {
-            "ip": "104.18.241.242",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1787426813
+            "created_at": 1787423879
         },
         {
             "ip": "162.159.135.34",
@@ -57,12 +69,6 @@
             "created_at": 1787423879
         },
         {
-            "ip": "104.17.125.234",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1787423879
-        },
-        {
             "ip": "162.159.135.34",
             "operator": "CFY",
             "provider": "hostmonit.com",
@@ -82,12 +88,6 @@
         },
         {
             "ip": "162.159.135.188",
-            "operator": "CFY",
-            "provider": "hostmonit.com",
-            "created_at": 1787423879
-        },
-        {
-            "ip": "162.159.138.248",
             "operator": "CFY",
             "provider": "hostmonit.com",
             "created_at": 1787423879
