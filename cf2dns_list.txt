@@ -1,18 +1,18 @@
-Last Update: 2026-10-19 20:57:05
+Last Update: 2026-10-20 00:12:23
 
 IPv4:
- - 198.41.208.11    CFY    hostmonit.com  1792443425
- - 198.41.209.128   CFY    hostmonit.com  1792443425
- - 198.41.209.145   CFY    hostmonit.com  1792443425
- - 198.41.208.204   CFY    hostmonit.com  1792443425
- - 198.41.209.61    CFY    hostmonit.com  1792443425
- - 162.159.235.31   CFY    hostmonit.com  1792443425
- - 104.17.69.136    CFY    hostmonit.com  1792443425
- - 104.19.25.68     CFY    hostmonit.com  1792443425
- - 104.17.40.21     CFY    hostmonit.com  1792443425
- - 104.19.6.35      CFY    hostmonit.com  1792443425
- - 198.41.208.11    CFY    hostmonit.com  1792443425
- - 198.41.209.128   CFY    hostmonit.com  1792443425
- - 198.41.209.145   CFY    hostmonit.com  1792443425
- - 198.41.208.204   CFY    hostmonit.com  1792443425
- - 198.41.209.61    CFY    hostmonit.com  1792443425
+ - 198.41.209.133   CFY    hostmonit.com  1792455143
+ - 198.41.208.86    CFY    hostmonit.com  1792455143
+ - 172.67.165.64    CFY    hostmonit.com  1792455143
+ - 198.41.209.9     CFY    hostmonit.com  1792455143
+ - 198.41.208.132   CFY    hostmonit.com  1792455143
+ - 104.27.123.163   CFY    hostmonit.com  1792455143
+ - 104.25.44.218    CFY    hostmonit.com  1792455143
+ - 104.24.159.90    CFY    hostmonit.com  1792455143
+ - 104.27.96.79     CFY    hostmonit.com  1792455143
+ - 104.27.82.170    CFY    hostmonit.com  1792455143
+ - 172.64.67.117    CFY    hostmonit.com  1792455143
+ - 162.159.236.194  CFY    hostmonit.com  1792455143
+ - 172.67.251.117   CFY    hostmonit.com  1792455143
+ - 141.101.113.10   CFY    hostmonit.com  1792455143
+ - 172.64.83.52     CFY    hostmonit.com  1792455143
